@@ -1,0 +1,18 @@
+postgres:
+sudo -i -u postgres
+psql
+\q
+\c learningflask (enter into database)
+\list (lists all databases)
+\dt (lists all tables in the database)
+\connect <database_name> (to connect to database)
+create user <username> with password '<password>'; (create a user who can access the table)
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO <username>; (grant permissions to the user)
+
+git:
+git add
+git status
+git commit -m git push origin master
+
+virtual environment:
+source venv/bin/activate  
